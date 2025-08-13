@@ -9,7 +9,7 @@
 
 Transform how marketing teams interact with campaign data through an intelligent RAG (Retrieval-Augmented Generation) system that provides instant, data-driven insights for Meta advertising performance.
 
-![Meta Ads RAG Demo](docs/Screenshot%202025-08-13%20at%2010.22.21%20PM.png)
+![Meta Ads RAG Demo](docs/demo-screenshot.png)
 
 ## 🎯 **Problem Solved**
 
