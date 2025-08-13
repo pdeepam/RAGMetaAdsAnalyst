@@ -1,0 +1,409 @@
+{
+  "campaigns": [
+    {
+      "id": "camp_001",
+      "name": "Black Friday Electronics Sale 2024",
+      "objective": "CONVERSIONS",
+      "status": "ACTIVE",
+      "industry": "Electronics",
+      "audience": "Retargeting",
+      "created_date": "2024-10-15",
+      "budget": {
+        "daily_budget": 500,
+        "total_budget": 15000
+      },
+      "targeting": {
+        "age_min": 25,
+        "age_max": 55,
+        "interests": ["electronics", "tech gadgets", "online shopping"],
+        "placements": ["feed", "stories", "reels"],
+        "devices": ["mobile", "desktop"]
+      },
+      "daily_performance": {
+        "2024-11-01": {
+          "impressions": 15000,
+          "clicks": 450,
+          "spend": 125.50,
+          "conversions": 18,
+          "ctr": 3.0,
+          "cpm": 8.37,
+          "cpc": 0.28,
+          "roas": 4.2,
+          "frequency": 1.8,
+          "reach": 8333
+        },
+        "2024-11-15": {
+          "impressions": 25000,
+          "clicks": 800,
+          "spend": 220.00,
+          "conversions": 32,
+          "ctr": 3.2,
+          "cpm": 8.80,
+          "cpc": 0.28,
+          "roas": 4.5,
+          "frequency": 2.1,
+          "reach": 11905
+        },
+        "2024-11-25": {
+          "impressions": 45000,
+          "clicks": 1350,
+          "spend": 450.00,
+          "conversions": 67,
+          "ctr": 3.0,
+          "cpm": 10.00,
+          "cpc": 0.33,
+          "roas": 5.2,
+          "frequency": 2.8,
+          "reach": 16071
+        },
+        "2024-11-29": {
+          "impressions": 67000,
+          "clicks": 1876,
+          "spend": 680.00,
+          "conversions": 95,
+          "ctr": 2.8,
+          "cpm": 10.15,
+          "cpc": 0.36,
+          "roas": 6.1,
+          "frequency": 3.2,
+          "reach": 20938
+        }
+      },
+      "insights": {
+        "best_performing_days": ["Friday", "Saturday"],
+        "top_placement": "Instagram Feed",
+        "audience_fatigue_date": "2024-12-05",
+        "seasonality": "High performance during Black Friday week"
+      }
+    },
+    {
+      "id": "camp_002", 
+      "name": "Holiday Fashion Retargeting",
+      "objective": "CONVERSIONS",
+      "status": "ACTIVE",
+      "industry": "Fashion",
+      "audience": "Website Visitors (Last 30 Days)",
+      "created_date": "2024-11-01",
+      "budget": {
+        "daily_budget": 300,
+        "total_budget": 9000
+      },
+      "targeting": {
+        "age_min": 18,
+        "age_max": 45,
+        "interests": ["fashion", "online shopping", "holiday shopping"],
+        "placements": ["feed", "stories"],
+        "devices": ["mobile"]
+      },
+      "daily_performance": {
+        "2024-11-01": {
+          "impressions": 12000,
+          "clicks": 360,
+          "spend": 108.00,
+          "conversions": 14,
+          "ctr": 3.0,
+          "cpm": 9.00,
+          "cpc": 0.30,
+          "roas": 3.8,
+          "frequency": 2.0,
+          "reach": 6000
+        },
+        "2024-11-15": {
+          "impressions": 14000,
+          "clicks": 420,
+          "spend": 147.00,
+          "conversions": 18,
+          "ctr": 3.0,
+          "cpm": 10.50,
+          "cpc": 0.35,
+          "roas": 3.2,
+          "frequency": 2.3,
+          "reach": 6087
+        },
+        "2024-12-01": {
+          "impressions": 8000,
+          "clicks": 200,
+          "spend": 90.00,
+          "conversions": 8,
+          "ctr": 2.5,
+          "cpm": 11.25,
+          "cpc": 0.45,
+          "roas": 2.1,
+          "frequency": 3.2,
+          "reach": 2500
+        }
+      },
+      "insights": {
+        "performance_decline": "CPM increased 25% after Nov 20",
+        "reason": "Audience saturation - frequency above 3.0",
+        "recommendation": "Expand audience or refresh creative"
+      }
+    },
+    {
+      "id": "camp_003",
+      "name": "Lookalike Expansion - Premium Products",
+      "objective": "CONVERSIONS", 
+      "status": "ACTIVE",
+      "industry": "Luxury Goods",
+      "audience": "Lookalike (1% - High Value Customers)",
+      "created_date": "2024-10-01",
+      "budget": {
+        "daily_budget": 400,
+        "total_budget": 12000
+      },
+      "targeting": {
+        "age_min": 28,
+        "age_max": 65,
+        "interests": ["luxury goods", "high-end shopping", "premium brands"],
+        "placements": ["feed", "stories", "reels"],
+        "devices": ["mobile", "desktop"]
+      },
+      "daily_performance": {
+        "2024-11-01": {
+          "impressions": 18000,
+          "clicks": 360,
+          "spend": 180.00,
+          "conversions": 9,
+          "ctr": 2.0,
+          "cpm": 10.00,
+          "cpc": 0.50,
+          "roas": 2.8,
+          "frequency": 1.5,
+          "reach": 12000
+        },
+        "2024-11-15": {
+          "impressions": 20000,
+          "clicks": 400,
+          "spend": 220.00,
+          "conversions": 12,
+          "ctr": 2.0,
+          "cpm": 11.00,
+          "cpc": 0.55,
+          "roas": 3.1,
+          "frequency": 1.6,
+          "reach": 12500
+        },
+        "2024-12-01": {
+          "impressions": 22000,
+          "clicks": 440,
+          "spend": 264.00,
+          "conversions": 15,
+          "ctr": 2.0,
+          "cpm": 12.00,
+          "cpc": 0.60,
+          "roas": 3.4,
+          "frequency": 1.7,
+          "reach": 12941
+        }
+      },
+      "insights": {
+        "steady_growth": "Consistent performance improvement",
+        "higher_cpc": "Premium audience commands higher costs",
+        "scaling_potential": "Can increase budget by 50%"
+      }
+    },
+    {
+      "id": "camp_004",
+      "name": "Fitness January Challenge 2025",
+      "objective": "LEAD_GENERATION",
+      "status": "PAUSED",
+      "industry": "Fitness",
+      "audience": "Interest Targeting",
+      "created_date": "2024-12-15", 
+      "budget": {
+        "daily_budget": 200,
+        "total_budget": 6000
+      },
+      "targeting": {
+        "age_min": 22,
+        "age_max": 50,
+        "interests": ["fitness", "weight loss", "healthy living", "gym"],
+        "placements": ["feed", "stories", "reels"],
+        "devices": ["mobile"]
+      },
+      "daily_performance": {
+        "2024-12-20": {
+          "impressions": 25000,
+          "clicks": 750,
+          "spend": 150.00,
+          "conversions": 45,
+          "ctr": 3.0,
+          "cpm": 6.00,
+          "cpc": 0.20,
+          "roas": 0,
+          "frequency": 2.1,
+          "reach": 11905
+        },
+        "2025-01-02": {
+          "impressions": 35000,
+          "clicks": 1400,
+          "spend": 175.00,
+          "conversions": 78,
+          "ctr": 4.0,
+          "cpm": 5.00,
+          "cpc": 0.125,
+          "roas": 0,
+          "frequency": 1.8,
+          "reach": 19444
+        },
+        "2025-01-05": {
+          "impressions": 42000,
+          "clicks": 1680,
+          "spend": 210.00,
+          "conversions": 92,
+          "ctr": 4.0,
+          "cpm": 5.00,
+          "cpc": 0.125,
+          "roas": 0,
+          "frequency": 1.9,
+          "reach": 22105
+        }
+      },
+      "insights": {
+        "seasonal_peak": "New Year resolution traffic surge",
+        "high_engagement": "4% CTR during peak season",
+        "lead_quality": "Strong lead generation performance"
+      }
+    },
+    {
+      "id": "camp_005",
+      "name": "Summer Travel Deals 2024 - FAILED",
+      "objective": "CONVERSIONS",
+      "status": "PAUSED",
+      "industry": "Travel",
+      "audience": "Interest + Behavior Targeting",
+      "created_date": "2024-06-01",
+      "budget": {
+        "daily_budget": 350,
+        "total_budget": 10500
+      },
+      "targeting": {
+        "age_min": 25,
+        "age_max": 55,
+        "interests": ["travel", "vacation planning", "beach destinations"],
+        "placements": ["feed", "stories"],
+        "devices": ["mobile", "desktop"]
+      },
+      "daily_performance": {
+        "2024-06-15": {
+          "impressions": 20000,
+          "clicks": 400,
+          "spend": 280.00,
+          "conversions": 4,
+          "ctr": 2.0,
+          "cpm": 14.00,
+          "cpc": 0.70,
+          "roas": 0.8,
+          "frequency": 2.5,
+          "reach": 8000
+        },
+        "2024-07-01": {
+          "impressions": 15000,
+          "clicks": 225,
+          "spend": 315.00,
+          "conversions": 2,
+          "ctr": 1.5,
+          "cpm": 21.00,
+          "cpc": 1.40,
+          "roas": 0.3,
+          "frequency": 3.8,
+          "reach": 3947
+        }
+      },
+      "insights": {
+        "campaign_failure": "Poor performance due to post-COVID travel hesitancy",
+        "high_costs": "CPM doubled due to increased competition",
+        "lessons_learned": "Travel audience not ready for premium packages"
+      }
+    },
+    {
+      "id": "camp_006",
+      "name": "Q4 Home & Garden - Broad Targeting",
+      "objective": "CONVERSIONS",
+      "status": "ACTIVE",
+      "industry": "Home & Garden", 
+      "audience": "Broad Targeting with Exclusions",
+      "created_date": "2024-10-01",
+      "budget": {
+        "daily_budget": 250,
+        "total_budget": 7500
+      },
+      "targeting": {
+        "age_min": 30,
+        "age_max": 65,
+        "interests": ["home improvement", "gardening", "DIY projects"],
+        "placements": ["feed", "stories", "reels"],
+        "devices": ["mobile", "desktop"]
+      },
+      "daily_performance": {
+        "2024-11-01": {
+          "impressions": 16000,
+          "clicks": 320,
+          "spend": 160.00,
+          "conversions": 8,
+          "ctr": 2.0,
+          "cpm": 10.00,
+          "cpc": 0.50,
+          "roas": 2.5,
+          "frequency": 1.8,
+          "reach": 8889
+        },
+        "2024-11-15": {
+          "impressions": 18000,
+          "clicks": 450,
+          "spend": 225.00,
+          "conversions": 15,
+          "ctr": 2.5,
+          "cpm": 12.50,
+          "cpc": 0.50,
+          "roas": 3.2,
+          "frequency": 1.9,
+          "reach": 9474
+        },
+        "2024-12-01": {
+          "impressions": 14000,
+          "clicks": 280,
+          "spend": 210.00,
+          "conversions": 10,
+          "ctr": 2.0,
+          "cpm": 15.00,
+          "cpc": 0.75,
+          "roas": 2.8,
+          "frequency": 2.2,
+          "reach": 6364
+        }
+      },
+      "insights": {
+        "seasonal_decline": "Winter slowdown in home improvement",
+        "cost_increase": "CPCs rising as competition increases",
+        "optimization_needed": "Consider pausing until spring"
+      }
+    }
+  ],
+  "global_insights": {
+    "market_trends": {
+      "q4_2024": "High competition during holiday season",
+      "cpm_inflation": "Average CPM increased 15% vs Q3",
+      "mobile_dominance": "Mobile traffic accounts for 78% of impressions"
+    },
+    "best_practices": {
+      "retargeting_performance": "Retargeting campaigns show 40% higher ROAS",
+      "creative_refresh": "Creative fatigue occurs at 3.0+ frequency",
+      "seasonal_optimization": "Fitness peaks in January, Fashion in November"
+    },
+    "anomalies_detected": {
+      "fashion_cpm_spike": {
+        "date": "2024-11-20",
+        "campaign": "Holiday Fashion Retargeting",
+        "issue": "25% CPM increase due to audience saturation",
+        "resolution": "Expand audience or refresh creative"
+      },
+      "travel_campaign_failure": {
+        "date": "2024-07-01",
+        "campaign": "Summer Travel Deals 2024",
+        "issue": "Poor market conditions, high competition",
+        "resolution": "Paused campaign, pivot to local experiences"
+      }
+    }
+  }
+}
