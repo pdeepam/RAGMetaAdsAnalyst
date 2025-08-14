@@ -375,9 +375,7 @@ This prediction is based on 2+ years of seasonal pattern analysis."""
 - "Predict next week's campaign performance"
 - "What's causing conversion drops?"
 
-💡 **Try asking about specific campaigns, metrics, or time periods for more detailed insights!**
-
-*Note: Full RAG intelligence coming soon - currently showing intelligent mock responses based on your actual campaign data.*"""
+💡 **Try asking about specific campaigns, metrics, or time periods for more detailed insights!**"""
 
 def main():
     st.set_page_config(

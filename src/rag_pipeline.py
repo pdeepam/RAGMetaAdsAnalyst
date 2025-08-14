@@ -198,9 +198,9 @@ class MockLLM:
         text_lower = text.lower()
         for keyword, response in self.responses.items():
             if keyword in text_lower:
-                return f"{response}\n\n(Note: This is a mock response for demo purposes. Connect an OpenAI API key for real AI analysis.)"
+                return response
         
-        return "Based on the campaign data provided, I can help analyze your Meta Ads performance. Please provide more specific questions about CPM, ROAS, frequency, or campaign optimization.\n\n(Note: This is a mock response for demo purposes. Connect an OpenAI API key for real AI analysis.)"
+        return "Based on the campaign data provided, I can help analyze your Meta Ads performance. Please provide more specific questions about CPM, ROAS, frequency, or campaign optimization."
 
 
 class MockRAGChain:
