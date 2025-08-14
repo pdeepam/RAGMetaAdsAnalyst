@@ -11,10 +11,33 @@ import os
 class CampaignDataLoader:
     """Load and process campaign data for RAG system"""
     
-    def __init__(self, data_path: str = "data/campaigns.json"):
-        self.data_path = data_path
+    def __init__(self, data_source: str = "auto", data_path: str = None):
+        """
+        Initialize data loader with data source selection
+        
+        Args:
+            data_source: "demo", "real", or "auto" (checks environment)
+            data_path: Custom path to data file (overrides data_source)
+        """
+        if data_path:
+            self.data_path = data_path
+        else:
+            self.data_path = self._get_data_path(data_source)
+        
+        self.data_source = data_source
         self.campaigns_data = None
         self.load_data()
+    
+    def _get_data_path(self, data_source: str) -> str:
+        """Determine data path based on source"""
+        if data_source == "auto":
+            # Check environment variable, default to demo
+            data_source = os.getenv("DATA_SOURCE", "demo")
+        
+        if data_source == "real":
+            return "data/real/campaigns.json"
+        else:  # demo or fallback
+            return "data/demo/campaigns.json"
     
     def load_data(self):
         """Load campaign data from JSON file"""

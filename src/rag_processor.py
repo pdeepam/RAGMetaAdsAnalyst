@@ -9,6 +9,7 @@ from langchain.schema import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores.utils import filter_complex_metadata
 import tempfile
 
 from data_loader import CampaignDataLoader
@@ -132,6 +133,9 @@ class CampaignRAGProcessor:
         
         # Initialize embeddings
         self._init_embeddings()
+        
+        # Filter complex metadata from documents
+        documents = filter_complex_metadata(documents)
         
         # Create or load vectorstore
         try:

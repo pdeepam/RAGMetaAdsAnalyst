@@ -59,43 +59,66 @@ class MetaAdsRAGPipeline:
     
     def _init_llm(self):
         """Initialize the LLM"""
-        if self.use_mock or not os.getenv("OPENAI_API_KEY"):
+        api_key = os.getenv("OPENAI_API_KEY")
+        
+        # Check if we have a valid API key (not empty or placeholder)
+        valid_key = (api_key and 
+                    api_key != "your_actual_openai_api_key_here" and 
+                    api_key != "your_openai_api_key_here" and
+                    len(api_key) > 10)
+        
+        if self.use_mock or not valid_key:
             # Use mock LLM for demo
             self.llm = MockLLM()
-            print("📚 Using Mock LLM (no API key required)")
+            print(f"📚 Using Mock LLM (API key valid: {bool(valid_key)})")
         else:
             self.llm = ChatOpenAI(
                 model=self.model_name,
                 temperature=self.temperature,
-                openai_api_key=os.getenv("OPENAI_API_KEY")
+                openai_api_key=api_key
             )
             print(f"🤖 Initialized {self.model_name} with temperature {self.temperature}")
     
     def _init_retriever(self):
         """Initialize the retriever"""
-        if self.use_mock or not os.getenv("OPENAI_API_KEY"):
+        api_key = os.getenv("OPENAI_API_KEY")
+        valid_key = (api_key and 
+                    api_key != "your_actual_openai_api_key_here" and 
+                    api_key != "your_openai_api_key_here" and
+                    len(api_key) > 10)
+        
+        if self.use_mock or not valid_key:
             # Use mock vectorstore
             self.rag_processor.create_mock_vectorstore()
+            print("🔍 Using Mock vectorstore")
         else:
-            # Use real ChromaDB
+            # Use real ChromaDB with OpenAI embeddings
             self.rag_processor.create_vectorstore()
+            print("🔍 Using ChromaDB with OpenAI embeddings")
         
         self.retriever = self.rag_processor.get_retriever(search_kwargs={"k": 5})
         print("🔍 Retriever ready")
     
     def _create_rag_chain(self):
         """Create the RAG chain"""
-        # Define the prompt template
-        prompt_template = """You are a Meta Ads expert analyst. Use the provided campaign data to answer questions about Meta advertising performance, optimization, and insights.
+        # Define the prompt template for real Facebook Ads analysis
+        prompt_template = """You are a senior Facebook/Meta Ads performance analyst with deep expertise in campaign optimization. You're analyzing real Facebook advertising data from actual campaigns that spent over $20,000 with authentic performance metrics.
 
-Context from campaigns:
+REAL CAMPAIGN DATA CONTEXT:
 {context}
 
-Question: {question}
+ANALYST QUESTION: {question}
 
-Provide a detailed, data-driven answer based on the campaign information. If specific metrics are mentioned in the context, include them in your response. Be professional and actionable in your recommendations.
+ANALYSIS GUIDELINES:
+- Use ONLY the specific metrics and data provided in the context
+- Reference actual campaign IDs, spend amounts, and performance numbers
+- Provide actionable insights based on real Facebook Ads best practices
+- Include specific recommendations with quantifiable impacts
+- If discussing CPM, CTR, ROAS - use the exact numbers from the data
+- Consider seasonal patterns, audience fatigue, and competitive factors
+- Format insights professionally as if reporting to a marketing director
 
-Answer:"""
+EXPERT ANALYSIS:"""
 
         prompt = ChatPromptTemplate.from_template(prompt_template)
         
