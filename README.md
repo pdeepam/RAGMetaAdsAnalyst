@@ -65,8 +65,8 @@ graph TB
 
 ### **1. Clone & Setup**
 ```bash
-git clone https://github.com/pdeepam/RAGMetaAdsDemo.git
-cd RAGMetaAdsDemo
+git clone https://github.com/pdeepam/RAGMetaAdsAnalyst.git
+cd RAGMetaAdsAnalyst
 pip install -r requirements.txt
 ```
 
@@ -216,7 +216,7 @@ CHROMA_PERSIST_DIRECTORY=./chroma_db        # Vector store location
 ## 📁 **Project Structure**
 
 ```
-RAGMetaAdsDemo/
+RAGMetaAdsAnalyst/
 ├── app.py                          # Streamlit web application
 ├── requirements.txt                # Python dependencies
 ├── src/
