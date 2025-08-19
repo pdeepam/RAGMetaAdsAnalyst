@@ -115,7 +115,7 @@ def setup_rag_chain():
 
 # 3. Streamlit UI
 def main():
-    st.title("🎯 Meta Ads RAG Demo")
+    st.title("🎯 Meta Ads AI Assistant")
     
     # Sidebar with sample queries
     st.sidebar.markdown("### Try These Queries:")

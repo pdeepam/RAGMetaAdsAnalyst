@@ -384,7 +384,7 @@ def main():
         layout="wide"
     )
     
-    st.title("🎯 Meta Ads RAG Demo")
+    st.title("🎯 Meta Ads AI Assistant")
     st.markdown("**Natural language queries over Meta Ads campaign data powered by AI**")
     
     # Load data (this will show any loading errors)
